@@ -1,0 +1,33 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Set your own initial variables
+// Update blue
+$menu-item-hover-background-color: #1b1d3d;
+
+$dropdown-item-color: #1b1d3d;
+
+$navbar-item-hover-background-color: #464866;
+
+$tabs-toggle-link-active-background-color: #464866;
+$tabs-toggle-link-active-border-color: #1b1d3d;
+
+// Import the rest of Bulma
+@import "~bulma/bulma";
+
+// Custom Color
+.is-main {
+  background-color: #1b1d3d !important;
+}
+.is-main-text {
+  color: #1b1d3d !important;
+}
+.is-normal-text {
+  color: #4a4a4a !important;
+}
+.is-white-text {
+  color: #fff !important;
+}
+.is-header {
+  background-color: #464866 !important;
+}

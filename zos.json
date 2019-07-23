@@ -1,0 +1,9 @@
+{
+  "zosversion": "2.2",
+  "name": "marketplace",
+  "version": "0.1.0",
+  "contracts": {
+    "AssetToken": "AssetToken",
+    "Marketplace": "Marketplace"
+  }
+}
