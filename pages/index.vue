@@ -37,7 +37,7 @@
       </basic-modal>
       <basic-modal v-if="isModalForSaleSelected">
         <div id="modalForSale" class="modal-contents">
-          <div>このモデルを売却しますか？</div>
+          <div>sell this asset?</div>
           <div class="modal-model">
             <img src="~/assets/images/model.png" width="50%" />
           </div>
@@ -45,7 +45,7 @@
       </basic-modal>
       <basic-modal v-if="isModalForSetSalePrice">
         <div id="modalForSalePrice" class="modal-contents">
-          <div>モデルの販売価格を設定してください。</div>
+          <div>set price for sale.</div>
           <div class="modal-model">
             <img src="~/assets/images/model.png" width="50%" />
           </div>
@@ -63,13 +63,11 @@
           />
           <p>ETH</p>
         </div>
-        <div class="is-size-7 has-text-centered">
-          0.001ETH以上を設定してください。
-        </div>
+        <div class="is-size-7 has-text-centered"></div>
       </basic-modal>
       <basic-modal v-if="isModalLoading">
         <div id="modalLoading" class="modal-contents">
-          <div ref="progressMes">処理中です...</div>
+          <div ref="progressMes">processing...</div>
           <div class="spinner">
             <div class="cube1"></div>
             <div class="cube2"></div>
@@ -78,7 +76,7 @@
       </basic-modal>
       <basic-modal v-if="isModalComplete">
         <div id="modalComplete" class="modal-contents">
-          <div>取引が正常に完了しました！</div>
+          <div>Completed！</div>
         </div>
       </basic-modal>
       <div class="contents">
@@ -436,7 +434,7 @@ export default class Page extends Vue {
     })()
 
     await this.openModal({
-      title: `${asset.name}の価格設定`,
+      title: `${asset.name}`,
       handleOnClickDecide: async () => {
         // validation
         const error = this.ethInputValidation()
@@ -473,7 +471,7 @@ export default class Page extends Vue {
             () => {
               this.selectedModal = this.MODALS.LOADING
               this.openModal({
-                title: "取引実行中",
+                title: "Trading in progress",
                 isFreezed: true
               })
             }
@@ -481,7 +479,7 @@ export default class Page extends Vue {
           .on("confirmation", () => {
             this.selectedModal = this.MODALS.COMPLETE
             this.openModal({
-              title: "取引完了",
+              title: "Completed!",
               isOnlyConfirm: true,
               closeHook: () => {
                 location.reload()
