@@ -1,7 +1,7 @@
 # ERC721-Marketplace
 ConsenSys Academy’s 2019 Developer Program Final Project
 
-### What does your project do?
+### What is this project
 
 This project is Erc721 Asset Token's Marketplace.
 You can buy asset and sell at Ropsten Testnet.
@@ -10,11 +10,16 @@ You can buy asset and sell at Ropsten Testnet.
 
 #### install node modules
 ```
-yarn install or npm install
+yarn install
+or
+npm install
 ```
 
 #### run development mode
 ```
-yarn dev or npm run dev
+yarn dev
+or
+npm run dev
 ```
 
+and open `localhost:3000`
