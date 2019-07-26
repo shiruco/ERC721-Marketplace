@@ -326,7 +326,7 @@ export default class Page extends Vue {
 
   getDeployData() {
     if (this.isRopsten) {
-      return require(`../zos.ropsten.json`)
+      //return require(`../zos.ropsten.json`)
     } else {
       return require(`../zos.dev-${this.NETWORK_ID}.json`)
     }
@@ -373,9 +373,9 @@ export default class Page extends Vue {
       isDecideBtnActive: !this.isMyModel(asset.id),
       handleOnClickDecide: async () => {
         const deployData = this.getDeployData()
-        const tokenProxyAdresses = deployData.proxies["vr_press/VRPressToken"]
-        const marketProxyAdresses = deployData.proxies["vr_press/Marketplace"]
-
+        const tokenProxyAdresses = deployData.proxies["marketplace/AssetToken"]
+        const marketProxyAdresses =
+          deployData.proxies["marketplace/Marketplace"]
         const Marketplace = await new this.web3.eth.Contract(
           require("../build/contracts/Marketplace.json").abi,
           marketProxyAdresses[marketProxyAdresses.length - 1].address
@@ -448,10 +448,12 @@ export default class Page extends Vue {
         }
 
         const deployData = this.getDeployData()
-        const tokenProxyAdresses = deployData.proxies["vr_press/VRPressToken"]
-        const marketProxyAdresses = deployData.proxies["vr_press/Marketplace"]
+        const tokenProxyAdresses = deployData.proxies["marketplace/AssetToken"]
+        const marketProxyAdresses =
+          deployData.proxies["marketplace/Marketplace"]
+
         const VRPressToken = await new this.web3.eth.Contract(
-          require("../build/contracts/VRPressToken.json").abi,
+          require("../build/contracts/AssetToken.json").abi,
           tokenProxyAdresses[tokenProxyAdresses.length - 1].address
         )
 
@@ -530,9 +532,9 @@ export default class Page extends Vue {
       this.myAddress = accounts[0]
     })
 
-    const contractData = require("../build/contracts/VRPressToken.json")
+    const contractData = require("../build/contracts/AssetToken.json")
     const deployData = this.getDeployData()
-    const tokenProxyAdresses = deployData.proxies["vr_press/VRPressToken"]
+    const tokenProxyAdresses = deployData.proxies["marketplace/AssetToken"]
 
     this.VRPressToken = await new this.web3.eth.Contract(
       contractData.abi,

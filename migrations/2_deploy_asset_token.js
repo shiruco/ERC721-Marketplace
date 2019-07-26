@@ -1,7 +1,7 @@
 const { scripts, ConfigVariablesInitializer } = require("zos")
 const { add, push, create } = scripts
 
-const deployAccount = "0x321039d1f46af2602af9a78b331597c04380a2f2"
+const deployAccount = "0x34CA72ECfc2b75F603BDad0A3651DB639FbB9c65"
 
 async function deploy(options) {
   add({ contractsData: [{ name: "AssetToken", alias: "AssetToken" }] })
