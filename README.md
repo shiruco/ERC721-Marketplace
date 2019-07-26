@@ -23,3 +23,6 @@ npm run dev
 ```
 
 and open `localhost:3000`
+
+
+<img src="./assets/images/cap.png">
