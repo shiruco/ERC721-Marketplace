@@ -4,7 +4,7 @@ ConsenSys Academy’s 2019 Developer Program Final Project
 ## What is this project
 
 This project is ERC721 Asset Token's Marketplace.
-You can buy asset and sell at Ropsten Testnet.
+You can buy and sell assets at Ropsten Testnet.
 
 ## How to set it up
 
