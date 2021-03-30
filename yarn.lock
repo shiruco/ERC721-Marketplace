@@ -5346,12 +5346,6 @@ nuxt-property-decorator@^1.2.0:
     vue-class-component "6.3.2"
     vuex-class "^0.3.1"
 
-nuxt-user-agent@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/nuxt-user-agent/-/nuxt-user-agent-1.0.2.tgz#68adcdde097784df065d3d81db9b21cf18051c4f"
-  dependencies:
-    woothee "^1.7.0"
-
 nuxt@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.3.4.tgz#61f5fe856ebbeced89f04a3734baa4ee91cc3cfa"
@@ -8134,10 +8128,6 @@ vue-server-renderer@^2.5.17:
     serialize-javascript "^1.3.0"
     source-map "0.5.6"
 
-vue-spinner@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vue-spinner/-/vue-spinner-1.0.3.tgz#eecd3f79f63a815b690e9d54b199ab65be695499"
-
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -8748,10 +8738,6 @@ widest-line@^2.0.0:
   dependencies:
     string-width "^2.1.1"
 
-woothee@^1.7.0:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/woothee/-/woothee-1.8.1.tgz#150140a58cff48f7ce8f350cb6f16e2dfda58b13"
-
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
@@ -8865,8 +8851,8 @@ xxhashjs@^0.2.1:
     cuint "^0.2.2"
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
 
 y18n@^4.0.0:
   version "4.0.0"
