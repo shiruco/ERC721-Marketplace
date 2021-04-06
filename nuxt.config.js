@@ -79,33 +79,33 @@ module.exports = {
   },
   modules: [
     "@nuxtjs/axios",
-    "~/modules/typescript.js",
-    [
-      "nuxt-i18n",
-      {
-        parsePages: false,
-        seo: true,
-        locales: [{ code: "ja", iso: "ja_JP" }, { code: "en", iso: "en-US" }],
-        defaultLocale: "ja",
-        vueI18n: {
-          fallbackLocale: "ja",
-          silentTranslationWarn: true
-        },
-        vueI18nLoader: true,
-        detectBrowserLanguage: {
-          // If enabled, a cookie is set once a user has been redirected to his
-          // preferred language to prevent subsequent redirections
-          // Set to false to redirect every time
-          useCookie: true,
-          // Cookie name
-          cookieKey: "i18n_redirected",
-          // Set to always redirect to value stored in the cookie, not just once
-          alwaysRedirect: false,
-          // If no locale for the browsers locale is a match, use this one as a fallback
-          fallbackLocale: "ja"
-        }
-      }
-    ]
+    "~/modules/typescript.js"
+    // [
+    //   "nuxt-i18n",
+    //   {
+    //     parsePages: false,
+    //     seo: true,
+    //     locales: [{ code: "ja", iso: "ja_JP" }, { code: "en", iso: "en-US" }],
+    //     defaultLocale: "ja",
+    //     vueI18n: {
+    //       fallbackLocale: "ja",
+    //       silentTranslationWarn: true
+    //     },
+    //     vueI18nLoader: true,
+    //     detectBrowserLanguage: {
+    //       // If enabled, a cookie is set once a user has been redirected to his
+    //       // preferred language to prevent subsequent redirections
+    //       // Set to false to redirect every time
+    //       useCookie: true,
+    //       // Cookie name
+    //       cookieKey: "i18n_redirected",
+    //       // Set to always redirect to value stored in the cookie, not just once
+    //       alwaysRedirect: false,
+    //       // If no locale for the browsers locale is a match, use this one as a fallback
+    //       fallbackLocale: "ja"
+    //     }
+    //   }
+    // ]
   ],
   plugins: [{ src: "~plugins/ga.js", ssr: false }],
   axios: {}
